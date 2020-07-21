@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather App</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <h1 class="top__title">weather app</h1>
+            <div class="top__wrapper">
+                <input class="top__input" type="text" placeholder="Search city">
+                <button class="top__btn">Search</button>
+                <p class="top__warning"></p>
+            </div>
+            <div class="header">
+                <h3 class="header__city"></h3>
+                <div class="header__wrapper">
+                    <h2 class="header__temp"></h2>
+                    <img class="header__img" src="" alt="Obrazek przedstawiający pogodę" class="photo">
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="weather__headings">
+                <p class="weather__p">Weather:</p>
+                <p class="weather__p">TEMP MIN/MAX:</p>
+                <p class="weather__p">Pressure:</p>
+            </div>
+            <div class="weather__info">
+                <p class="weather__p weather"></p>
+                <p class="weather__p temp"></p>
+                <p class="weather__p pressure"></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
